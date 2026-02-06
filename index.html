@@ -156,12 +156,11 @@
   <!-- ============================================================ -->
   <!-- NEW: URGENCY BANNER (from Figma — make seasonal/dynamic)     -->
   <!-- ============================================================ -->
-  <div class="bg-yellow-400 text-gray-900 py-2.5 px-4">
+  <div class="bg-ergreen-600 text-white py-2.5 px-4">
     <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 text-center">
-      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.072 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-      <p class="font-bold text-sm md:text-base">
-        <span class="hidden sm:inline">February Special: </span>
-        Book this week &amp; save $200 on installations over $2,000
+      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      <p class="font-medium text-sm md:text-base">
+        Now scheduling February &amp; March installations in Dallas &bull; <a href="#quote" class="underline font-bold">Check availability</a>
       </p>
     </div>
   </div>
@@ -178,7 +177,7 @@
           <!-- Badge -->
           <div class="mb-4">
             <span class="inline-block bg-ergreen-100 text-ergreen-800 px-4 py-1.5 rounded-full font-semibold text-sm">
-              Get Your Quote in 60 Seconds
+              Serving Dallas County &bull; 945+ Projects Completed
             </span>
           </div>
 
@@ -265,7 +264,7 @@
         </div>
       </div>
 
-      <!-- Multi-Step Calculator (from Figma — enhanced) -->
+      <!-- Services & Pricing Guide -->
       <div id="quote" class="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-4xl mx-auto border-2 border-ergreen-100">
         <!-- Progress Bar -->
         <div class="bg-gray-100 h-2">
@@ -275,8 +274,8 @@
         <div class="p-6 md:p-10">
           <!-- Step 1: Service Selection -->
           <div id="step1">
-            <h2 class="text-2xl md:text-3xl font-bold mb-2">What project are you planning?</h2>
-            <p class="text-gray-600 mb-6">Select your service to get a personalized estimate</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-2">Dallas Outdoor Installation Services &amp; Pricing</h2>
+            <p class="text-gray-600 mb-6">Explore our services and local pricing, then request a detailed quote for your project</p>
 
             <!-- Service Category Tabs -->
             <div class="flex flex-wrap gap-2 mb-6 border-b pb-4">
@@ -291,43 +290,63 @@
             <div id="cat-fence" class="cat-panel">
               <div class="grid md:grid-cols-2 gap-4 mb-6">
                 <button onclick="selectService(this,'wood-fence',38,48,'ft')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
-                  <span class="absolute top-2 right-2 bg-ergreen-600 text-white text-xs px-2 py-0.5 rounded-full font-bold">POPULAR</span>
+                  <span class="absolute top-2 right-2 bg-ergreen-600 text-white text-xs px-2 py-0.5 rounded-full font-bold">MOST POPULAR IN DALLAS</span>
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/15803d/ffffff?text=Wood%0AFence" alt="Wood fence" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/15803d/ffffff?text=Wood%0AFence%0APhoto" alt="Wood fence installation in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Wood Fence</div>
-                      <div class="text-ergreen-600 font-medium">$38–48/ft installed</div>
-                      <div class="text-xs text-gray-500 mt-1">868 completed in Dallas County &bull; avg $4,468</div>
+                      <div class="text-ergreen-600 font-bold">$38–48/ft installed</div>
+                      <p class="text-sm text-gray-600 mt-2">The most popular choice for Dallas homeowners. Available in cedar, pine, and pressure-treated wood with styles including board-on-board, side-by-side, and good neighbor. Ideal for privacy, pets, and property lines. Typical height: 6 ft.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">868 completed in Dallas County</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Avg project: $4,468</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Avg length: 89 ft</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'vinyl-fence',52,62,'ft')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/e5e7eb/374151?text=Vinyl%0AFence" alt="Vinyl fence" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/e5e7eb/374151?text=Vinyl%0AFence%0APhoto" alt="Vinyl fence installation in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Vinyl Fence</div>
-                      <div class="text-ergreen-600 font-medium">$52–62/ft installed</div>
-                      <div class="text-xs text-gray-500 mt-1">10 completed in Dallas County &bull; avg $8,434</div>
+                      <div class="text-ergreen-600 font-bold">$52–62/ft installed</div>
+                      <p class="text-sm text-gray-600 mt-2">Low-maintenance and long-lasting. Vinyl won't rot, warp, or need painting &mdash; perfect for the Dallas heat. Available in white, tan, and gray with privacy and semi-privacy styles. Backed by manufacturer warranties.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">10 completed in Dallas County</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Avg project: $8,434</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Zero maintenance</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'chainlink-fence',18,22,'ft')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/9ca3af/ffffff?text=Chain%0ALink" alt="Chain link fence" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/9ca3af/ffffff?text=Chain%0ALink%0APhoto" alt="Chain link fence installation in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Chain Link Fence</div>
-                      <div class="text-ergreen-600 font-medium">$18–22/ft installed</div>
-                      <div class="text-xs text-gray-500 mt-1">25 completed in Dallas County &bull; avg $4,189</div>
+                      <div class="text-ergreen-600 font-bold">$18–22/ft installed</div>
+                      <p class="text-sm text-gray-600 mt-2">The most affordable fencing option. Galvanized steel with optional vinyl coating in black or green. Great for property boundaries, backyards, and pet enclosures. Available in 4 ft, 5 ft, and 6 ft heights.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">25 completed in Dallas County</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Avg project: $4,189</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Lowest cost/ft</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'metal-fence',43,52,'ft')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/1f2937/ffffff?text=Metal%0AFence" alt="Metal fence" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/1f2937/ffffff?text=Metal%0AFence%0APhoto" alt="Metal fence installation in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
-                      <div class="font-bold text-lg mb-1">Metal / Aluminum</div>
-                      <div class="text-ergreen-600 font-medium">$43–52/ft installed</div>
-                      <div class="text-xs text-gray-500 mt-1">Elegant, weather-resistant</div>
+                      <div class="font-bold text-lg mb-1">Metal / Aluminum Fence</div>
+                      <div class="text-ergreen-600 font-bold">$43–52/ft installed</div>
+                      <p class="text-sm text-gray-600 mt-2">Elegant wrought-iron look without the rust. Powder-coated aluminum is weather-resistant and virtually maintenance-free. Popular for front yards, pool enclosures, and properties where visibility is preferred over privacy.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Rust-resistant</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">HOA-friendly</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Pool code compliant</span>
+                      </div>
                     </div>
                   </div>
                 </button>
@@ -344,46 +363,62 @@
               <div class="grid md:grid-cols-2 gap-4 mb-6">
                 <button onclick="selectService(this,'concrete-driveway',1491,17409,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/64748b/ffffff?text=Driveway%0APhoto" alt="Concrete driveway" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/64748b/ffffff?text=Driveway%0APhoto" alt="Concrete driveway in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Concrete Driveway</div>
-                      <div class="text-ergreen-600 font-medium">Avg $4,838 in Dallas</div>
-                      <div class="text-xs text-gray-500 mt-1">11 completed in Dallas County</div>
+                      <div class="text-ergreen-600 font-bold">Avg $4,838 in Dallas</div>
+                      <p class="text-sm text-gray-600 mt-2">Replace or extend your driveway with poured concrete. Finish options include broom finish, stamped, exposed aggregate, and stained. Typical projects range from single-car to full double-wide replacement.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">11 completed in Dallas County</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Range: $1,491–$17,409</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'concrete-patio',1895,10571,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/475569/ffffff?text=Patio%0APhoto" alt="Concrete patio" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/475569/ffffff?text=Patio%0APhoto" alt="Concrete patio in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Concrete Patio</div>
-                      <div class="text-ergreen-600 font-medium">Avg $4,843 in Dallas</div>
-                      <div class="text-xs text-gray-500 mt-1">12 completed in Dallas County</div>
+                      <div class="text-ergreen-600 font-bold">Avg $4,843 in Dallas</div>
+                      <p class="text-sm text-gray-600 mt-2">Extend your outdoor living space with a poured concrete patio. Perfect for barbecues, furniture, and entertaining. We handle grading, forming, pouring, and finishing &mdash; ready for use in about 30 days after curing.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">12 completed in Dallas County</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Range: $1,895–$10,571</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'concrete-walkway',1998,9277,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/94a3b8/ffffff?text=Walkway%0APhoto" alt="Concrete walkway" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/94a3b8/ffffff?text=Walkway%0APhoto" alt="Concrete walkway" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Walkways &amp; Steps</div>
-                      <div class="text-ergreen-600 font-medium">From $1,998 in DFW</div>
-                      <div class="text-xs text-gray-500 mt-1">Completed across DFW metro</div>
+                      <div class="text-ergreen-600 font-bold">From $1,998 in DFW</div>
+                      <p class="text-sm text-gray-600 mt-2">Smooth, safe pathways from your driveway to your front door or through the garden. Includes entry steps, garden paths, and side-yard walkways. ADA-compliant options available for accessibility.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Completed across DFW metro</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Range: $1,998–$9,277</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'concrete-hardscape',4542,4542,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/334155/ffffff?text=Hardscape%0APhoto" alt="Hardscape" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/334155/ffffff?text=Hardscape%0APhoto" alt="Hardscape project" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
-                      <div class="font-bold text-lg mb-1">Hardscape</div>
-                      <div class="text-ergreen-600 font-medium">Custom projects</div>
-                      <div class="text-xs text-gray-500 mt-1">Patios, retaining walls &amp; more</div>
+                      <div class="font-bold text-lg mb-1">Hardscape &amp; Custom Concrete</div>
+                      <div class="text-ergreen-600 font-bold">Custom project pricing</div>
+                      <p class="text-sm text-gray-600 mt-2">Retaining walls, fire pit pads, outdoor kitchens, and multi-feature hardscape designs. We work with you to design and build complex concrete projects that transform your outdoor space.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Custom scope</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Free design consultation</span>
+                      </div>
                     </div>
                   </div>
                 </button>
               </div>
-              <p class="text-sm text-gray-500 mb-6">Concrete pricing varies significantly by project size and scope. Enter details for a personalized estimate.</p>
+              <p class="text-sm text-gray-500 mb-6">All concrete pricing includes site preparation, forming, pouring, finishing, and cleanup. 56 total concrete projects completed across the DFW metro area.</p>
             </div>
 
             <!-- Deck Options -->
@@ -391,116 +426,138 @@
               <div class="grid md:grid-cols-2 gap-4 mb-6">
                 <button onclick="selectService(this,'deck-dining',3381,6347,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/b45309/ffffff?text=Dining%0ADeck" alt="Dining deck" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/b45309/ffffff?text=Dining%0ADeck%0APhoto" alt="Dining deck in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Dining Deck</div>
-                      <div class="text-ergreen-600 font-medium">From $3,381 in DFW</div>
-                      <div class="text-xs text-gray-500 mt-1">Near kitchen, ample seating</div>
+                      <div class="text-ergreen-600 font-bold">From $3,381 in DFW</div>
+                      <p class="text-sm text-gray-600 mt-2">Designed adjacent to your kitchen for easy indoor-outdoor dining. Typically 12x16 ft or larger with built-in seating options. Composite or pressure-treated lumber, with optional railing and stairs.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Avg: $4,370 in DFW</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Near-kitchen placement</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'deck-gathering',3381,6347,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/92400e/ffffff?text=Gathering%0ADeck" alt="Gathering deck" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/92400e/ffffff?text=Gathering%0ADeck%0APhoto" alt="Gathering deck" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Gathering Deck</div>
-                      <div class="text-ergreen-600 font-medium">From $3,381 in DFW</div>
-                      <div class="text-xs text-gray-500 mt-1">Entertaining &amp; relaxation</div>
+                      <div class="text-ergreen-600 font-bold">From $3,381 in DFW</div>
+                      <p class="text-sm text-gray-600 mt-2">Open-plan decks built for entertaining. Spacious layouts with room for lounge furniture, fire pits, and groups. Great for Dallas backyards where outdoor living is a year-round activity.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Avg: $4,370 in DFW</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Entertaining-focused</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'deck-pool',3381,6347,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/0369a1/ffffff?text=Pool%0ADeck" alt="Pool deck" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/0369a1/ffffff?text=Pool%0ADeck%0APhoto" alt="Pool deck in Dallas" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Pool Deck</div>
-                      <div class="text-ergreen-600 font-medium">From $3,381 in DFW</div>
-                      <div class="text-xs text-gray-500 mt-1">Style + safety for poolside</div>
+                      <div class="text-ergreen-600 font-bold">From $3,381 in DFW</div>
+                      <p class="text-sm text-gray-600 mt-2">Slip-resistant composite decking built around your pool. Designed to meet Dallas pool barrier code requirements. Heat-resistant materials keep surfaces cool in Texas summers.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Pool code compliant</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Heat-resistant surface</span>
+                      </div>
                     </div>
                   </div>
                 </button>
                 <button onclick="selectService(this,'deck-standalone',3381,6347,'project')" class="svc-btn relative p-5 rounded-xl border-2 border-gray-200 text-left transition-all hover:shadow-md hover:border-ergreen-300">
                   <div class="flex gap-4 items-start">
-                    <img src="https://placehold.co/80x80/78350f/ffffff?text=Standalone%0ADeck" alt="Standalone deck" class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
+                    <img src="https://placehold.co/100x100/78350f/ffffff?text=Standalone%0ADeck%0APhoto" alt="Standalone deck" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
                     <div>
                       <div class="font-bold text-lg mb-1">Standalone Deck</div>
-                      <div class="text-ergreen-600 font-medium">From $3,381 in DFW</div>
-                      <div class="text-xs text-gray-500 mt-1">Yard focal point</div>
+                      <div class="text-ergreen-600 font-bold">From $3,381 in DFW</div>
+                      <p class="text-sm text-gray-600 mt-2">Freestanding deck placed anywhere in your yard &mdash; no attachment to the house needed. Ideal as a garden focal point, hot tub platform, or detached entertainment area. Easier permitting in most Dallas neighborhoods.</p>
+                      <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-500">
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">No house attachment</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded">Flexible placement</span>
+                      </div>
                     </div>
                   </div>
                 </button>
               </div>
-              <p class="text-sm text-gray-500 mb-6">Deck projects in the DFW area average $4,370. Size, materials, and design affect final price.</p>
+              <p class="text-sm text-gray-500 mb-6">Deck projects in the DFW area average $4,370. Materials include composite (Trex, TimberTech) and pressure-treated wood. All builds include footings, framing, decking, and optional railing.</p>
             </div>
 
-            <!-- Turf Options (no pricing — consultation flow) -->
+            <!-- Turf Options (consultation flow) -->
             <div id="cat-turf" class="cat-panel hidden">
               <div class="bg-lime-50 border border-lime-200 rounded-xl p-6 mb-6">
                 <div class="flex items-start gap-4">
-                  <div class="w-12 h-12 bg-lime-200 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl">&#127793;</div>
+                  <img src="https://placehold.co/120x120/65a30d/ffffff?text=Turf%0AInstall%0APhoto" alt="Artificial turf installation in Dallas" class="w-24 h-24 rounded-xl object-cover flex-shrink-0">
                   <div>
                     <h3 class="font-bold text-lg mb-1">Artificial Turf Installation in Dallas</h3>
-                    <p class="text-gray-700 text-sm mb-3">Transform your yard with low-maintenance artificial grass. We offer four packages tailored to different needs:</p>
-                    <div class="grid grid-cols-2 gap-2">
-                      <button onclick="selectService(this,'turf-landscape',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-lime-400 transition-all">
-                        <div class="font-bold text-sm">Landscape Package</div>
-                        <div class="text-xs text-gray-500">Moderate traffic, lush look</div>
-                      </button>
-                      <button onclick="selectService(this,'turf-kidscape',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-lime-400 transition-all">
-                        <div class="font-bold text-sm">Kidscape Package</div>
-                        <div class="text-xs text-gray-500">Kid-friendly, jump padding</div>
-                      </button>
-                      <button onclick="selectService(this,'turf-petscape',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-lime-400 transition-all">
-                        <div class="font-bold text-sm">Petscape Package</div>
-                        <div class="text-xs text-gray-500">Pet-friendly, odor control</div>
-                      </button>
-                      <button onclick="selectService(this,'turf-putting',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-lime-400 transition-all">
-                        <div class="font-bold text-sm">Putting Green</div>
-                        <div class="text-xs text-gray-500">Golf-grade surface</div>
-                      </button>
-                    </div>
+                    <p class="text-gray-700 text-sm mb-1">Say goodbye to mowing, watering, and brown patches. Our artificial turf stays green year-round through Dallas summers, requires zero irrigation, and is safe for kids and pets. Professional installation includes ground prep, drainage layer, turf laying, and infill.</p>
+                    <p class="text-gray-500 text-xs mb-3">Pricing depends on yard size, package, and site preparation &mdash; we provide a custom quote during your free consultation.</p>
                   </div>
                 </div>
               </div>
-              <p class="text-sm text-gray-500 mb-6">Turf pricing depends on yard size, package, and site preparation. Select a package above and we'll provide a custom quote during your free consultation.</p>
+              <div class="grid grid-cols-2 gap-3 mb-6">
+                <button onclick="selectService(this,'turf-landscape',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-lime-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/84cc16/ffffff?text=Landscape" alt="Landscape turf" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">Landscape Package</div>
+                  <p class="text-xs text-gray-500 mt-1">Our most popular option. Natural-looking turf for front and back yards with moderate foot traffic. Soft blade technology for a realistic feel.</p>
+                </button>
+                <button onclick="selectService(this,'turf-kidscape',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-lime-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/22c55e/ffffff?text=Kidscape" alt="Kidscape turf" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">Kidscape Package</div>
+                  <p class="text-xs text-gray-500 mt-1">Extra padding underneath for safer play. Antimicrobial infill keeps surfaces clean. Perfect for play areas, swing sets, and trampolines.</p>
+                </button>
+                <button onclick="selectService(this,'turf-petscape',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-lime-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/16a34a/ffffff?text=Petscape" alt="Petscape turf" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">Petscape Package</div>
+                  <p class="text-xs text-gray-500 mt-1">Engineered for dogs and pets. Enhanced drainage, odor-control infill (Zeofill), and durable fibers that resist digging and heavy traffic.</p>
+                </button>
+                <button onclick="selectService(this,'turf-putting',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-lime-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/15803d/ffffff?text=Putting" alt="Putting green" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">Putting Green</div>
+                  <p class="text-xs text-gray-500 mt-1">Golf-grade surface with true ball roll. Custom contours and multiple hole placements. Great for practice or backyard entertainment.</p>
+                </button>
+              </div>
             </div>
 
-            <!-- Gutters (lead capture only — no pricing) -->
+            <!-- Gutters (consultation flow) -->
             <div id="cat-gutters" class="cat-panel hidden">
               <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 mb-6">
                 <div class="flex items-start gap-4">
-                  <div class="w-12 h-12 bg-slate-200 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M3 4v16l9-4 9 4V4"/></svg>
-                  </div>
+                  <img src="https://placehold.co/120x120/475569/ffffff?text=Gutter%0AInstall%0APhoto" alt="Gutter installation in Dallas" class="w-24 h-24 rounded-xl object-cover flex-shrink-0">
                   <div>
-                    <h3 class="font-bold text-lg mb-1">Gutter Replacement in Dallas</h3>
-                    <p class="text-gray-700 text-sm mb-3">Protect your home with professionally installed gutters. We offer seamless aluminum gutter systems designed for North Texas weather.</p>
-                    <div class="grid grid-cols-2 gap-2">
-                      <button onclick="selectService(this,'gutters-replacement',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-slate-400 transition-all">
-                        <div class="font-bold text-sm">Gutter Replacement</div>
-                        <div class="text-xs text-gray-500">Full system replacement</div>
-                      </button>
-                      <button onclick="selectService(this,'gutters-install',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-slate-400 transition-all">
-                        <div class="font-bold text-sm">New Gutter Install</div>
-                        <div class="text-xs text-gray-500">New construction or addition</div>
-                      </button>
-                      <button onclick="selectService(this,'gutters-guards',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-slate-400 transition-all">
-                        <div class="font-bold text-sm">Gutter Guards</div>
-                        <div class="text-xs text-gray-500">Leaf &amp; debris protection</div>
-                      </button>
-                      <button onclick="selectService(this,'gutters-repair',0,0,'consult')" class="svc-btn p-3 rounded-lg border-2 border-gray-200 text-left hover:border-slate-400 transition-all">
-                        <div class="font-bold text-sm">Gutter Repair</div>
-                        <div class="text-xs text-gray-500">Fix leaks &amp; damage</div>
-                      </button>
-                    </div>
+                    <h3 class="font-bold text-lg mb-1">Gutter Installation &amp; Replacement in Dallas</h3>
+                    <p class="text-gray-700 text-sm mb-1">Protect your foundation, landscaping, and siding from North Texas storms. We install seamless aluminum gutter systems custom-fabricated on-site to fit your home perfectly &mdash; no seams means fewer leaks. Available in 20+ colors to match your exterior.</p>
+                    <p class="text-gray-500 text-xs mb-3">Pricing depends on home size, stories, and project type &mdash; we provide a free custom quote after a brief consultation.</p>
                   </div>
                 </div>
               </div>
-              <p class="text-sm text-gray-500 mb-6">Gutter pricing depends on home size, material, and complexity. Select your project type above and we'll provide a free custom quote.</p>
+              <div class="grid grid-cols-2 gap-3 mb-6">
+                <button onclick="selectService(this,'gutters-replacement',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-slate-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/64748b/ffffff?text=Replace" alt="Gutter replacement" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">Gutter Replacement</div>
+                  <p class="text-xs text-gray-500 mt-1">Remove old, damaged gutters and install a new seamless system. Includes downspouts, end caps, and outlet connections. Most homes completed in one day.</p>
+                </button>
+                <button onclick="selectService(this,'gutters-install',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-slate-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/334155/ffffff?text=New" alt="New gutter installation" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">New Gutter Install</div>
+                  <p class="text-xs text-gray-500 mt-1">First-time gutter installation for new construction, additions, or homes that never had gutters. Includes fascia board inspection and proper slope engineering.</p>
+                </button>
+                <button onclick="selectService(this,'gutters-guards',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-slate-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/94a3b8/ffffff?text=Guards" alt="Gutter guards" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">Gutter Guards</div>
+                  <p class="text-xs text-gray-500 mt-1">Stop leaves, pine needles, and debris from clogging your gutters. Micro-mesh guards keep water flowing while blocking 99% of debris. Reduces maintenance to near-zero.</p>
+                </button>
+                <button onclick="selectService(this,'gutters-repair',0,0,'consult')" class="svc-btn p-4 rounded-xl border-2 border-gray-200 text-left hover:border-slate-400 hover:shadow-md transition-all">
+                  <img src="https://placehold.co/60x60/1e293b/ffffff?text=Repair" alt="Gutter repair" class="w-12 h-12 rounded-lg mb-2">
+                  <div class="font-bold text-sm">Gutter Repair</div>
+                  <p class="text-xs text-gray-500 mt-1">Fix sagging sections, leaking joints, and storm damage. We patch, reseal, and re-secure existing gutters. Often more cost-effective than full replacement for isolated issues.</p>
+                </button>
+              </div>
             </div>
 
             <button onclick="goStep(2)" id="step1next" class="w-full bg-ergreen-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-ergreen-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2">
-              See My Estimate
+              Get a Detailed Quote for This Service
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </button>
           </div>
@@ -787,106 +844,118 @@
 
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Fences -->
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-          <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-            <span class="w-8 h-8 bg-ergreen-100 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-ergreen-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></span>
-            Fence Construction
-          </h3>
-          <div class="grid grid-cols-2 gap-3">
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
-              <h4 class="font-semibold text-sm">Wooden Fences</h4>
-              <p class="text-xs text-gray-500">From $38/ft</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
-              <h4 class="font-semibold text-sm">Cedar Fences</h4>
-              <p class="text-xs text-gray-500">Premium wood</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
-              <h4 class="font-semibold text-sm">Chain Link Fences</h4>
-              <p class="text-xs text-gray-500">From $18/ft</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
-              <h4 class="font-semibold text-sm">Vinyl Fences</h4>
-              <p class="text-xs text-gray-500">From $52/ft</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
-              <h4 class="font-semibold text-sm">Metal Fences</h4>
-              <p class="text-xs text-gray-500">From $43/ft</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
-              <h4 class="font-semibold text-sm">Boxed Wire Fences</h4>
-              <p class="text-xs text-gray-500">Aesthetic &amp; effective</p>
-            </a>
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/600x200/166534/ffffff?text=Fence+Installation+Gallery%0A(Multiple+styles+composite+image)" alt="Fence installation services in Dallas" class="w-full h-44 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Fence Construction</h3>
+            <p class="text-sm text-gray-600 mb-4">915 fence projects completed in Dallas County. We install all major fence types with materials sourced from local suppliers and installation by licensed crews.</p>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
+                <h4 class="font-semibold text-sm">Wooden Fences</h4>
+                <p class="text-xs text-gray-500">From $38/ft &bull; Cedar, pine, pressure-treated</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
+                <h4 class="font-semibold text-sm">Cedar Fences</h4>
+                <p class="text-xs text-gray-500">Premium wood &bull; Natural insect resistance</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
+                <h4 class="font-semibold text-sm">Chain Link Fences</h4>
+                <p class="text-xs text-gray-500">From $18/ft &bull; Most affordable option</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
+                <h4 class="font-semibold text-sm">Vinyl Fences</h4>
+                <p class="text-xs text-gray-500">From $52/ft &bull; Zero maintenance</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
+                <h4 class="font-semibold text-sm">Metal / Aluminum</h4>
+                <p class="text-xs text-gray-500">From $43/ft &bull; Elegant, rust-free</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-ergreen-50 transition-colors">
+                <h4 class="font-semibold text-sm">Boxed Wire Fences</h4>
+                <p class="text-xs text-gray-500">Modern aesthetic &bull; Great visibility</p>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Concrete -->
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-          <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-            <span class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></span>
-            Concrete Installation
-          </h3>
-          <div class="grid grid-cols-2 gap-3">
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
-              <h4 class="font-semibold text-sm">Driveways</h4>
-              <p class="text-xs text-gray-500">Durable &amp; custom</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
-              <h4 class="font-semibold text-sm">Patios</h4>
-              <p class="text-xs text-gray-500">Outdoor living</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
-              <h4 class="font-semibold text-sm">Walkways</h4>
-              <p class="text-xs text-gray-500">Smooth &amp; safe</p>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
-              <h4 class="font-semibold text-sm">Steppers</h4>
-              <p class="text-xs text-gray-500">Garden paths</p>
-            </a>
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/600x200/475569/ffffff?text=Concrete+Installation+Gallery%0A(Driveway+%2B+Patio+composite)" alt="Concrete installation services in Dallas" class="w-full h-44 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Concrete Installation</h3>
+            <p class="text-sm text-gray-600 mb-4">24 concrete projects in Dallas County, 56 across DFW. Driveways, patios, walkways, and custom hardscape — all poured and finished by experienced local crews.</p>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
+                <h4 class="font-semibold text-sm">Driveways</h4>
+                <p class="text-xs text-gray-500">Avg $4,838 &bull; Broom, stamped, stained</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
+                <h4 class="font-semibold text-sm">Patios</h4>
+                <p class="text-xs text-gray-500">Avg $4,843 &bull; Extend outdoor living</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
+                <h4 class="font-semibold text-sm">Walkways &amp; Steps</h4>
+                <p class="text-xs text-gray-500">From $1,998 &bull; Safe, ADA-compliant</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
+                <h4 class="font-semibold text-sm">Custom Hardscape</h4>
+                <p class="text-xs text-gray-500">Retaining walls, fire pits &amp; more</p>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Decks -->
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-          <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-            <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></span>
-            Deck Installation
-          </h3>
-          <div class="grid grid-cols-2 gap-3">
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
-              <h4 class="font-semibold text-sm">Dining Decks</h4>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
-              <h4 class="font-semibold text-sm">Gathering Decks</h4>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
-              <h4 class="font-semibold text-sm">Pool Decks</h4>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
-              <h4 class="font-semibold text-sm">Stand Alone</h4>
-            </a>
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/600x200/92400e/ffffff?text=Deck+Installation+Gallery%0A(Composite+%2B+Wood+deck+photo)" alt="Deck installation services in Dallas" class="w-full h-44 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Deck Installation</h3>
+            <p class="text-sm text-gray-600 mb-4">Custom deck design and construction in the DFW area. Composite and wood options with professional engineering for Dallas soil and weather conditions.</p>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
+                <h4 class="font-semibold text-sm">Dining Decks</h4>
+                <p class="text-xs text-gray-500">Kitchen-adjacent &bull; From $3,381</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
+                <h4 class="font-semibold text-sm">Gathering Decks</h4>
+                <p class="text-xs text-gray-500">Entertaining &bull; Open layouts</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
+                <h4 class="font-semibold text-sm">Pool Decks</h4>
+                <p class="text-xs text-gray-500">Slip-resistant &bull; Code compliant</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-amber-50 transition-colors">
+                <h4 class="font-semibold text-sm">Standalone Decks</h4>
+                <p class="text-xs text-gray-500">Freestanding &bull; Flexible placement</p>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Artificial Grass -->
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-          <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-            <span class="w-8 h-8 bg-lime-100 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></span>
-            Artificial Grass
-          </h3>
-          <div class="grid grid-cols-2 gap-3">
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
-              <h4 class="font-semibold text-sm">Landscape Package</h4>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
-              <h4 class="font-semibold text-sm">Kidscape Package</h4>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
-              <h4 class="font-semibold text-sm">Petscape Package</h4>
-            </a>
-            <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
-              <h4 class="font-semibold text-sm">Putting Green</h4>
-            </a>
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/600x200/65a30d/ffffff?text=Artificial+Turf+Gallery%0A(Lush+green+lawn+photo)" alt="Artificial turf installation in Dallas" class="w-full h-44 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Artificial Grass</h3>
+            <p class="text-sm text-gray-600 mb-4">Year-round green without watering, mowing, or fertilizing. Especially popular in Dallas where summer heat and water restrictions make natural lawns challenging.</p>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
+                <h4 class="font-semibold text-sm">Landscape Package</h4>
+                <p class="text-xs text-gray-500">Front &amp; back yards &bull; Natural look</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
+                <h4 class="font-semibold text-sm">Kidscape Package</h4>
+                <p class="text-xs text-gray-500">Extra padding &bull; Antimicrobial</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
+                <h4 class="font-semibold text-sm">Petscape Package</h4>
+                <p class="text-xs text-gray-500">Odor control &bull; Heavy traffic</p>
+              </a>
+              <a href="#" class="block p-3 rounded-lg bg-gray-50 hover:bg-lime-50 transition-colors">
+                <h4 class="font-semibold text-sm">Putting Green</h4>
+                <p class="text-xs text-gray-500">Golf-grade &bull; True ball roll</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -898,7 +967,8 @@
   <!-- ============================================================ -->
   <section class="py-14 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">What Dallas homeowners say</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">What Dallas homeowners say</h2>
+      <p class="text-gray-600 text-center mb-10">Real reviews from verified customers in the Dallas area</p>
       <div class="grid md:grid-cols-3 gap-6 mb-10">
         <div class="bg-gray-50 p-6 rounded-xl">
           <div class="flex gap-0.5 mb-3"><span class="text-yellow-400">&#9733;</span><span class="text-yellow-400">&#9733;</span><span class="text-yellow-400">&#9733;</span><span class="text-yellow-400">&#9733;</span><span class="text-yellow-400">&#9733;</span></div>
@@ -933,6 +1003,21 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- Review Platform Links -->
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <a href="https://www.google.com/search?q=ergeon+dallas+reviews" class="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-5 py-2.5 shadow-sm hover:shadow-md transition-shadow text-sm font-medium text-gray-700 hover:text-ergreen-600">
+          <span class="font-bold">Google</span> &bull; 9,369 reviews &bull; 4.9 avg
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+        <a href="https://www.yelp.com/biz/ergeon-palo-alto" class="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-5 py-2.5 shadow-sm hover:shadow-md transition-shadow text-sm font-medium text-gray-700 hover:text-red-600">
+          <span class="font-bold text-red-600">Yelp</span> &bull; 7,868 reviews &bull; 4.7 avg
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+        <a href="https://www.homeadvisor.com/rated.Ergeon.67824505.html" class="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-5 py-2.5 shadow-sm hover:shadow-md transition-shadow text-sm font-medium text-gray-700 hover:text-orange-600">
+          <span class="font-bold text-orange-500">HomeAdvisor</span> &bull; 1,524 reviews &bull; 4.7 avg
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -1125,8 +1210,8 @@
   <!-- ============================================================ -->
   <section class="py-16 bg-gradient-to-br from-ergreen-600 to-ergreen-700 text-white">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-5xl font-bold mb-4">Ready to get started?</h2>
-      <p class="text-xl mb-8 opacity-90">Join 41,000+ happy customers. Free quote, no obligation.</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Have questions about your project?</h2>
+      <p class="text-xl mb-8 opacity-90">Talk to our Dallas team &mdash; no pressure, no obligation. We're here to help you plan.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
         <a href="tel:214-771-9691" class="bg-white text-ergreen-600 px-10 py-5 rounded-lg hover:bg-gray-100 font-bold text-xl shadow-2xl inline-flex items-center gap-3 w-full sm:w-auto justify-center">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -1134,14 +1219,14 @@
         </a>
         <span class="text-white font-medium">or</span>
         <a href="#quote" class="border-2 border-white text-white px-10 py-5 rounded-lg hover:bg-white hover:text-ergreen-600 font-bold text-xl transition-all w-full sm:w-auto text-center">
-          Get Online Quote
+          Request a Quote Online
         </a>
       </div>
       <div class="flex flex-wrap justify-center gap-8 text-sm opacity-90">
         <div>&#10003; Free consultation</div>
         <div>&#10003; Licensed &amp; insured</div>
         <div>&#10003; ~2 week installation</div>
-        <div>&#10003; Satisfaction guaranteed</div>
+        <div>&#10003; 41,000+ projects completed nationwide</div>
       </div>
     </div>
   </section>
